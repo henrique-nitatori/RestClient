@@ -29,6 +29,7 @@ public class GetAddressOutBoundServiceTest {
         try{
             ZipCodeAddress response = new GetAddressOutBoundService().getAddress('01001000');
             System.assert(false, 'CalloutException expected');
+            
         }catch(CalloutException e) {
             System.assert(true);
         }
